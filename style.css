@@ -764,10 +764,9 @@ main {
 }
 /* footer section */
 .footer-section {
-  width: 80%;
+  width: 100%;
   text-align: center;
   height: fit-content;
-  border: 5px green solid;
 
 }
 
@@ -799,9 +798,6 @@ main {
 .footer-bottom .left {
   width: 100%;
   height: 100%;
-  margin: auto;
-  border: 1px solid green;
-  /* flex-wrap: wrap; */
 }
 .left .links{
   position: relative;
@@ -818,6 +814,7 @@ main {
   justify-content: space-around;
   width: 100%;
   padding: 0;
+  border: 1px solid rgb(225, 52, 52);
 }
 
 
@@ -833,7 +830,7 @@ main {
   height: 100%;
   display: flex;
   flex-direction: column-reverse;
-  align-items: flex-start;
+  align-items: center;
   text-align: left;
 }
 .footer-bottom .right .links{
