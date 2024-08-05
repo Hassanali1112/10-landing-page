@@ -317,11 +317,12 @@ main {
 /* details-section */
 
 .details-section {
+  margin-top: 80px;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   display: flex;
-  justify-content: space-between;
-  padding: 60px 0;
+  border: 1px solid black;
+  padding: 10px 0;
   gap: 30px;
 }
 
@@ -333,15 +334,15 @@ main {
 }
 
 .detail-left h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   line-height: 1.2;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.693);
 }
 
 .detail-left p {
-  color: rgba(0, 0, 0, 0.502);
-  width: 65%;
+  font-size: 1.1rem;
+  width: 55%;
 }
 
 .details-section .detail-right {
@@ -378,12 +379,11 @@ main {
 
 .details p {
   color: rgba(0, 0, 0, 0.502);
+  font-size: 1.1rem;
 }
 
 /* card-section */
 .cards-section {
-  margin: 20px 0;
-  padding: 50px 0;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -530,6 +530,7 @@ main {
 .icon-box:hover {
   color: #ff8411;
   cursor: pointer;
+  width: fit-content !important;
 }
 
 .footer-bottom .input-copyright {
@@ -724,7 +725,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  /* gap: 10px; */
 }
 
 .card {
@@ -792,7 +792,7 @@ main {
   height: fit-content;
   display: flex;
   flex-direction: column-reverse;
-  padding: 30px 10px;
+  padding: 50px 10px;
 }
 
 .footer-bottom .left {
@@ -802,7 +802,7 @@ main {
 .left .links{
   position: relative;
   bottom: 150px ;
-  right: 180px;
+  right: 250px;
   text-align: left;
 }
 
@@ -811,20 +811,15 @@ main {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  padding: 0;
-  border: 1px solid rgb(225, 52, 52);
+  justify-content: space-between;
+  position: relative;
+  left: 80px;
+  margin-top: 20px;
 }
-
-
-
 .icons .icon-box {
   width: 35px;
   height: 35px;
-  display: inline-block;
 }
-
 .footer-bottom .right {
   width: 100%;
   height: 100%;
@@ -833,30 +828,15 @@ main {
   align-items: center;
   text-align: left;
 }
+.footer-bottom input{
+  padding: 10px 20px;
+
+}
+.footer-bottom .go{
+    padding: 15px 25px;
+}
 .footer-bottom .right .links{
-  align-self: flex-end;
-}
-.footer-bottom .links {
-
-  display: flex;
-  flex-direction: column;
-  font-size: .9rem;
-}
-
-.links li{
-  width: fit-content;
-}
-
-.footer-bottom .input-copyright {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.input-copyright .go {
-  box-shadow: none;
-  padding: 12px 20px;
-  font-size: .7rem;
+  margin-left: 80px;
 }
 
 .input-copyright h6 {
@@ -866,7 +846,7 @@ main {
 
 .input-copyright .copyright {
   position: relative;
-  top: 300px;
+  top: 350px;
   text-align: center;
 }
 }
